@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    
+</head>
+<body>
+    
+<div id="app">
+    <input type="text" id="input" v-model="word" placeholder="typer in words">
+    <button v-on:click="save(word)" id="saveButton" >Save</button>
+    <button v-on:click="show" id="showButton" >Show</button>
+    <button v-on:click="clear" id="clearButton">Clear</button> 
+    <div id="output" >{{message}}</div>
+</div>
+    <script src="./index.js"></script>
+</body>
+</html>
